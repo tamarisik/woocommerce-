@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop Page</title>
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shop.js"></script>
+</head>
+<body>
+<!--section - header-->
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">Ba<span class="logo2">chira</span></a>
+      </div>
+    <nav calss="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#products.html">Products</a></li>
+            <li><a href="#categories.html">Categories</a></li>
+            <li><a href="#brands.html">Brands</a></li>
+            <li><a href="#pricing.html">Pricing</a></li>
+
+        </ul>
+
+
+    </nav>
+    <div class="log-reg">
+
+        <div><a href="login.html" class="log">Login</a></div>
+        <div><a href="registration.html" class="reg-butt">Register</a></div>
+
+
+
+
+
+    </div>
+
+
+</header>
+
+    <!--shop section-->
+  <h1>Welcome to our Shop</h1>
+
+  <div id="products">
+    <div class="product">
+      <img src="pictures/image 1 (1).png" alt="Product 1">
+      <h2>Sweater</h2>
+      <p>$10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pictures/download.jpeg" alt="Product 1">
+      <h2>Shirt</h2>
+      <p>$10</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pictures/images.jpeg" alt="Product 1">
+      <h2>Black pants</h2>
+      <p>$40</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pictures/image 1 (1).png" alt="Product 1">
+      <h2>Sweater</h2>
+      <p>$30</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pictures/image 1 (2).png" alt="Product 2">
+      <h2>Watch</h2>
+      <p>$15</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="pictures/image 1.png" alt="Product 3">
+      <h2>Sport shoes</h2>
+      <p>$20</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: $0</p>
+    <button id="checkout">Checkout</button>
+  </div>
+
+  
+</body>
+</html>

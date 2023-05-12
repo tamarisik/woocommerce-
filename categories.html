@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+     
+    }
+    
+  
+    
+    h1 {
+      margin: 0;
+    }
+    
+    nav {
+      background: #f4f4f4;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    
+    .product {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    
+    .product img {
+      max-width: 100%;
+      height: auto;
+    }
+    .category {
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<!--section - header-->
+
+<header class="header">
+    <div class="logo">
+        <a href="index.html">Ba<span class="logo2">chira</span></a>
+      </div>
+    <nav calss="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="#categories.html">Categories</a></li>
+            <li><a href="#brands.html">Brands</a></li>
+            <li><a href="#pricing.html">Pricing</a></li>
+
+        </ul>
+
+
+    </nav>
+    <div class="log-reg">
+
+        <div><a href="login.html" class="log">Login</a></div>
+        <div><a href="registration.html" class="reg-butt">Register</a></div>
+
+
+
+
+
+    </div>
+
+
+</header>
+
+
+
+<!--product categories-->
+  <div>
+    <h1 style="text-align:center; margin: 20px;">Product Page</h1>
+  </div>
+
+  <nav>
+    <ul>
+      <li class="category" data-category="all">All</li>
+      <li class="category" data-category="electronics">Electronics</li>
+      <li class="category" data-category="clothing">Clothing</li>
+      <li class="category" data-category="books">Books</li>
+    </ul>
+  </nav>
+
+  <div class="product-container">
+    <div class="product" data-category="electronics">
+      <img src="pictures/electr.jpg" alt="Electronics Product">
+      <h3>Electronics Product</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="product" data-category="clothing">
+      <img src="pictures/shir.jpg" alt="Clothing Product">
+      <h3>Clothing Product</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="product" data-category="books">
+      <img src="pictures/book.webp" alt="Book Product">
+      <h3>Book Product</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="product" data-category="electronics">
+      <img src="pictures/elect2.large" alt="Electronics Product">
+      <h3>Electronics Product 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".category").click(function() {
+        var category = $(this).data("category");
+
+        if (category === "all") {
+          $(".product").fadeIn();
+        } else {
+          $(".product").fadeOut();
+          $(".product[data-category='" + category + "']").fadeIn();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

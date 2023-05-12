@@ -1,0 +1,96 @@
+body {
+    background-color: #f3f3f3;
+  }
+  
+  .container {
+    max-width: 500px;
+    padding: 50px;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    }
+    
+    h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    }
+    
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    label {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    text-align: left;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="password"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .register-button {
+    background-color: white;
+    color: green;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .register-button:hover {
+    background-color: #e0e0e0;
+    color: green;
+    }
+    
+    .container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, #b4eeb4, #008000);
+    z-index: -1;
+    filter: blur(20px);
+    }
+    
+    .container::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: linear-gradient(45deg, #00bfff, #b4eeb4);
+    z-index: -2;
+    transform: rotate(2deg);
+    }
+    
+   

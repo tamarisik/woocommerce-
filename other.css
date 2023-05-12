@@ -1,0 +1,15 @@
+.log-reg {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+}
+.log-reg a {
+    text-decoration: none;
+}
+.log {
+font-size: large;
+}
+.log:hover {
+    color: green;
+}
